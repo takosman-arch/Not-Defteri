@@ -791,6 +791,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextField(
+                selectionWidthStyle: ui.BoxWidthStyle.tight,
                 contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                 controller: ctrl,
@@ -869,6 +870,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
               ),
               const SizedBox(height: 12),
               TextField(
+                selectionWidthStyle: ui.BoxWidthStyle.tight,
                 contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                 controller: answerCtrl,
@@ -1141,6 +1143,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextField(
+                selectionWidthStyle: ui.BoxWidthStyle.tight,
                 contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                 controller: controller,
@@ -1952,6 +1955,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TextField(
+                        selectionWidthStyle: ui.BoxWidthStyle.tight,
                         contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                         controller: _titleController,
@@ -1970,6 +1974,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
                       const SizedBox(height: 20),
                       if (noteType == 'text')
                         TextField(
+                          selectionWidthStyle: ui.BoxWidthStyle.tight,
                           contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                           controller: _contentController,
@@ -2006,6 +2011,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
                               ),
                               Expanded(
                                 child: TextField(
+                                  selectionWidthStyle: ui.BoxWidthStyle.tight,
                                   controller: checkControllers[i],
                                   focusNode: checkFocusNodes[i],
                                   autofocus: newlyAddedIndex == i,
@@ -2213,6 +2219,7 @@ class _NoteListScreenState extends State<NoteListScreen> {
       appBar: AppBar(
         title: _isSearching
             ? TextField(
+              selectionWidthStyle: ui.BoxWidthStyle.tight,
                 controller: _searchController,
                 autofocus: true,
                 contextMenuBuilder: buildCustomContextMenu,
@@ -3391,6 +3398,7 @@ class _SettingsPageState extends State<_SettingsPage> {
               ),
               const SizedBox(height: 12),
               TextField(
+                selectionWidthStyle: ui.BoxWidthStyle.tight,
                 contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                 controller: answerCtrl,
@@ -3457,6 +3465,7 @@ class _SettingsPageState extends State<_SettingsPage> {
               children: [
                 if (!isNew)
                   TextField(
+                    selectionWidthStyle: ui.BoxWidthStyle.tight,
                     contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                     controller: ctrl1,
@@ -3475,6 +3484,7 @@ class _SettingsPageState extends State<_SettingsPage> {
                   )
                 else ...[
                   TextField(
+                    selectionWidthStyle: ui.BoxWidthStyle.tight,
                     contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                     controller: ctrl1,
@@ -3493,6 +3503,7 @@ class _SettingsPageState extends State<_SettingsPage> {
                   ),
                   const SizedBox(height: 12),
                   TextField(
+                    selectionWidthStyle: ui.BoxWidthStyle.tight,
                     contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                     controller: ctrl2,
@@ -3532,6 +3543,7 @@ class _SettingsPageState extends State<_SettingsPage> {
                   ),
                   const SizedBox(height: 12),
                   TextField(
+                    selectionWidthStyle: ui.BoxWidthStyle.tight,
                     contextMenuBuilder: buildCustomContextMenu,
                   selectionHeightStyle: ui.BoxHeightStyle.max,
                     controller: hintAnswerCtrl,
